@@ -1,0 +1,144 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 479237,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GlueCodeToAddCart.Test(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 437292,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GlueCode.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "",
+        "description": "",
+        "id": "add-item-to-cart;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 11468033041,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "open \"amazon.in\" site in \"chrome\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "amazon.in",
+                  "offset": 6
+                },
+                {
+                  "val": "chrome",
+                  "offset": 26
+                }
+              ],
+              "location": "GlueCodeToAddCart.openSite(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 375763923,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "search for product",
+            "match": {
+              "location": "GlueCodeToAddCart.searchForProduct(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "product name"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "dell laptop"
+                ],
+                "line": 10
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3186459200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "click enter",
+            "match": {
+              "location": "GlueCodeToAddCart.clickSearchBtn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6160480022,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "click on first product",
+            "match": {
+              "location": "GlueCodeToAddCart.click_on_first_product()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5055715053,
+              "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)\r\n\tat tests.GlueCodeToAddCart.add_to_cart(GlueCodeToAddCart.java:91)\r\n\tat ✽.And add to cart(src/test/resources/features/AddToCart.feature:13)\r\n",
+              "status": "failed"
+            },
+            "line": 13,
+            "name": "add to cart",
+            "match": {
+              "location": "GlueCodeToAddCart.add_to_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "verify whether the product added to cart",
+            "match": {
+              "location": "GlueCodeToAddCart.verifyCart()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@smoketest"
+          }
+        ]
+      }
+    ],
+    "name": "Add item to cart",
+    "description": "",
+    "id": "add-item-to-cart",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/AddToCart.feature"
+  }
+]
